@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TL;DR - уютная кофейня</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <a href="#main" class="skip-link link">Перейти к основному контенту</a>
+    <header class="header">
+        <div class="heading header__title"><img src="./assets/logo.png" alt="Логотип кофейни TL;DR: чашка с кофе"
+                class="header__logo"><a href="#" class="link header__link"> TL;DR</a></div>
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="./index.html#new-arrivals" class="link nav__link">Новинки</a></li>
+                <li class="nav__list-item"><a href="./index.html#hits" class="link nav__link">Хиты</a></li>
+                <li class="nav__list-item"><a href="./index.html#story" class="link nav__link">История</a></li>
+                <li class="nav__list-item"><a href="./index.html#address" class="link nav__link">Как добраться</a></li>
+                <li class="nav__list-item"><a href="./index.html#gallery" class="link nav__link">Галерея</a></li>
+                <li class="nav__list-item"><a href="./index.html#contacts" class="link nav__link">Контакты</a></li>
+                <li class="nav__list-item"><a href="./contacts.html" class="link nav__link">Связаться с нами</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button class="button mobile-menu-button" id="open-mobile-menu" aria-label="Открыть меню навигации"><span
+            class="mobile-menu-button__stripe"></span></button>
+    <main class="main" id="main">
+        <section class="section section-contacts">
+            <h1 class="heading section-contacts__heading">Связаться с нами</h1>
+            <div class="table-wrapper">
+                <table class="contacts-table">
+                    <thead class="contacts-table__head">
+                        <th class="contacts-table__heading">Имя</th>
+                        <th class="contacts-table__heading">Телефон</th>
+                        <th class="contacts-table__heading">Электронная почта</th>
+                        <th class="contacts-table__heading">Должность</th>
+                    </thead>
+                    <tbody class="contacts-table__tbody">
+                        <tr class="contacts-table__row">
+                            <td class="contacts-table__cell">Анжелика Зотова</td>
+                            <td class="contacts-table__cell">+ 7(123)-456-78-90</td>
+                            <td class="contacts-table__cell">angelika_zotova@example.ru</td>
+                            <td class="contacts-table__cell">Шеф-повар</td>
+                        </tr>
+                        <tr class="contacts-table__row">
+                            <td class="contacts-table__cell">Светлана Носкова</td>
+                            <td class="contacts-table__cell">+ 7(123)-456-79-81</td>
+                            <td class="contacts-table__cell">noskova_s@example.ru</td>
+                            <td class="contacts-table__cell">Руководитель HR-отдела</td>
+                        </tr>
+                        <tr class="contacts-table__row">
+                            <td class="contacts-table__cell">Станислав Иванов</td>
+                            <td class="contacts-table__cell">+ 7(123)-456-78-81</td>
+                            <td class="contacts-table__cell">ivanov_stanislav@example.ru</td>
+                            <td class="contacts-table__cell">Руководитель PR-отдела</td>
+                        </tr>
+                        <tr class="contacts-table__row">
+                            <td class="contacts-table__cell">Виктор Чайкин</td>
+                            <td class="contacts-table__cell">+ 7(123)-455-78-92</td>
+                            <td class="contacts-table__cell">chaikin_v@example.ru</td>
+                            <td class="contacts-table__cell">Руководитель ИТ-отдела</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <form class="contacts-form"
+                onSubmit="event.preventDefault(); alert('Ваше обращение отправлено!'); event.target.reset()">
+                <p class="contacts-form__description">Если у Вас есть вопросы, на которые наши сотрудники не могут
+                    ответить, свяжитесь с нами через эту форму.</p>
+                <div class="contacts-form__input-group">
+                    <label for="name" class="contacts-form__label">Ваше имя:</label>
+                    <input type="text" id="name" autocomplete="name" class="contacts-form__input" required>
+                </div>
+                <div class="contacts-form__input-group">
+                    <label for="email-or-phone" class="contacts-form__label">Ваш телефон или email:</label>
+                    <input type="text" id="email-or-phone" autocomplete="off" class="contacts-form__input" required>
+                </div>
+                <div class="contacts-form__input-group">
+                    <label for="text" class="contacts-form__label">Текст обращения:</label>
+                    <textarea id="text" class="contacts-form__textarea" required></textarea>
+                </div>
+                <button class="contacts-form__submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <div class="mobile-menu" id="mobile-menu">
+        <nav class="nav mobile-menu__nav">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="./index.html#new-arrivals" class="link nav__link"  tabindex="-1">Новинки</a></li>
+                <li class="nav__list-item"><a href="./index.html#hits" class="link nav__link" tabindex="-1">Хиты</a></li>
+                <li class="nav__list-item"><a href="./index.html#story" class="link nav__link" tabindex="-1">История</a></li>
+                <li class="nav__list-item"><a href="./index.html#address" class="link nav__link" tabindex="-1">Как добраться</a></li>
+                <li class="nav__list-item"><a href="./index.html#gallery" class="link nav__link" tabindex="-1">Галерея</a></li>
+                <li class="nav__list-item"><a href="./index.html#contacts" class="link nav__link" tabindex="-1">Контакты</a></li>
+                <li class="nav__list-item"><a href="./contacts.html" class="link nav__link" tabindex="-1">Связаться с нами</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu__close-button" id="close-mobile-menu">
+            Закрыть
+        </button>
+    </div>
+    <div class="backdrop">
+
+    </div>
+    <footer class="footer" id="contacts">
+        <p class="footer__copyright">&copy; 2026. Все права защищены</p>
+        <ul class="footer__contacts-list">
+            <li class="footer__contacts-item">Телефон: <a href="" class="link footer__link">+7 (123)-456-78-90</a>
+            </li>
+            <li class="footer__contacts-item">Email: <a href="" class="link footer__link">tldr@example.ru</a></li>
+        </ul>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
